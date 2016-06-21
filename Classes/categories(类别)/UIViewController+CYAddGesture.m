@@ -10,6 +10,8 @@
 
 #import "Header.h"
 
+#import "CYLeftView.h"
+
 #define WINDOWX Width-50
 
 static UITapGestureRecognizer *_tap;

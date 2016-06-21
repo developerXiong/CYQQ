@@ -19,6 +19,10 @@
         
         self.backgroundColor = [UIColor whiteColor];
         
+        UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 200, self.bounds.size.width, 20)];
+        label.text = @"陈宫就在一念之间看你怎么选择正确的道路能让人少走几十年的错路";
+        label.textColor = [UIColor blackColor];
+        [self addSubview:label];
     }
     return self;
 }

@@ -26,8 +26,8 @@
     
     CYTabBarController *tabBarVc = [[CYTabBarController alloc] init];
     UINavigationController *naVc = [[UINavigationController alloc] initWithRootViewController:tabBarVc];
+    
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    self.window.rootViewController = naVc;
     [self.window makeKeyAndVisible];
     self.window.hidden = NO;
     self.window.backgroundColor = [UIColor whiteColor];
@@ -35,6 +35,8 @@
     CGFloat w = Width-50, h = Height, x = -w, y = 0;
     CYLeftView *leftV = [[CYLeftView alloc] initWithFrame:CGRectMake(x, y, w, h)];
     [self.window addSubview:leftV];
+    
+    self.window.rootViewController = naVc;
     
     return YES;
 }
